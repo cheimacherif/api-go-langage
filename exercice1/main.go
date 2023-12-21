@@ -1,12 +1,14 @@
 package main
 
 import (
+	dictionary "exercice1/dictionnary"
 	"fmt"
 )
 
-dictionary := Dictionary{}
 
 func main() {
+	
+	dictionary :=dictionary.Dictionary{}
 	
 	// Add some words and definitions
 	dictionary.Add("golang", "The Go Programming Language")

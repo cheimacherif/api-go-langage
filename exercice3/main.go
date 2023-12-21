@@ -1,17 +1,17 @@
 package main
 
 import (
+	dictionnary "exercice3/dictionnary"
 	"fmt"
 	"net/http"
 	"os"
-	"path/filepath"
-
-	
+	"sort"
+	"strings"
 )
 
 func main() {
 	// Instantiate a new Dictionary
-	dict := dictionary.NewDictionary("dict.txt")
+	dict := dictionnary.NewDictionary("dict.txt")
 
 	// Set up routes
 	http.HandleFunc("/add", func(w http.ResponseWriter, r *http.Request) {

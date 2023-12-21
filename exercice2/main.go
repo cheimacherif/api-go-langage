@@ -1,12 +1,13 @@
 package main
 
 import (
+	dictionnary "exercice2/dictionnary"
 	"fmt"
 )
 
 func main() {
 	// Instantiate a new Dictionary
-	dict := NewDictionary("dict.txt")
+	dict := dictionnary.NewDictionary("dict.txt")
 
 	// Add some words and definitions
 	dict.Add("golang", "The Go Programming Language")
@@ -28,7 +29,7 @@ func main() {
 	if err != nil {
 		fmt.Printf("Error: %s\n", err)
 	} else {
-		fmt.Printf("'%s' has been")
+		fmt.Printf("has been removed from the dictionary.\n")
 	}}
 
 
